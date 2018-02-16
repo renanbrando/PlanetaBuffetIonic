@@ -1,0 +1,8 @@
+{
+  "name": "PlanetaBuffetIonic",
+  "app_id": "a35dcc74",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
