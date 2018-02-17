@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="royal">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Seu Cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+          <ion-label stacked>Nome</ion-label>
+          <ion-input type="text" placeholder="John Doe"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label stacked>Tipo de Festa</ion-label>
+          <ion-input type="text" placeholder="Casamento"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked>Data do Evento</ion-label>
+            <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="YYYY-MM-DD" [(ngModel)]="myDate" placeholder="2018-10-10"></ion-datetime>
+        </ion-item>
+        
+      
+      </ion-list>
+</ion-content>
