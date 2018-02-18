@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { BuffetsmapsPage } from '../buffetsmaps/buffetsmaps';
 
 /**
- * Generated class for the BuffetsPage page.
+ * Generated class for the FornecedorPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { BuffetsmapsPage } from '../buffetsmaps/buffetsmaps';
 
 @IonicPage()
 @Component({
-  selector: 'page-buffets',
-  templateUrl: 'buffets.html',
+  selector: 'page-fornecedor',
+  templateUrl: 'fornecedor.html',
 })
-export class BuffetsPage {
+export class FornecedorPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BuffetsPage');
-  }
-
-  navigateMaps(){
-    this.navCtrl.push(BuffetsmapsPage);
+    console.log('ionViewDidLoad FornecedorPage');
   }
 
 }
