@@ -55,5 +55,6 @@ export class SignaturePage {
     this.signaturePad.clear();
   }
 
+  
 
 }
