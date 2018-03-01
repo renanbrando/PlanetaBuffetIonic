@@ -24,7 +24,7 @@ export class BuffetsPage {
   }
 
   navigateMaps(){
-    this.navCtrl.push(BuffetsmapsPage);
+    this.navCtrl.push("BuffetsmapsPage");
   }
 
 }

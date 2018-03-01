@@ -9,15 +9,12 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
+    <ion-item *ngFor="let item of list">
+      <ion-thumbnail item-start>
+        <img src="{{item.img}}">
+      </ion-thumbnail>
+      <h3>{{item.name}}</h3>
+      <button ion-button clear item-end (click)="itemTapped(item.name)">Ver</button>
+    </ion-item>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
 </ion-content>

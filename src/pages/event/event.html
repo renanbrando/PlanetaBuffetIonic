@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="royal">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Event</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+  <ion-card *ngFor="let event of events" (click)="navigatePlaces()">
+    <img src="{{event.img}}"/>
+    <div class="card-title">{{event.desc}}</div>
+    <!-- <div class="card-subtitle">{{event.places}} places</div> -->
+  </ion-card>
+
+</ion-content>

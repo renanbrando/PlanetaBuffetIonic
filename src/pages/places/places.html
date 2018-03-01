@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="royal">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Places</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+  <ion-card *ngFor="let place of buffets" (click)="chooseDate()">
+    <img src="{{place.urlImg}}"/>
+    <div class="card-title">{{place.name}}</div>
+    <!-- <div class="card-subtitle">{{event.places}} places</div> -->
+  </ion-card>
+
+</ion-content>
