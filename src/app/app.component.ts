@@ -21,7 +21,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: "HomePage", icon: 'home' },
       { title: 'Minha conta', component: "ProfilePage", icon: 'contact' },
-      { title: 'Evento', component: "EventPage", icon: 'calendar' },
+      { title: 'Eventos', component: "EventPage", icon: 'calendar' },
       { title: 'Configurações', component: "SettingsPage", icon: 'cog' },
       { title: 'Fornecedores', component: "ListPage", icon: 'wine' },
       { title: 'Buffets', component: "BuffetsPage", icon: 'navigate' },
